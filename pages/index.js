@@ -1,8 +1,8 @@
-import DarkModeSwitch from "@/components/darkModeSwitch"
+import Layout from "@/components/Layout"
 export default function HomePage() {
   return (
-    <div>
-      <DarkModeSwitch/>
-    </div>
+    <Layout>
+      <h1>hello world</h1>
+    </Layout>
   )
 }
