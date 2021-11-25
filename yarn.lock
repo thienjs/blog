@@ -333,6 +333,23 @@
     "@types/node-fetch" "^2.5.10"
     "node-fetch" "^2.6.1"
 
+"@tailwindcss/forms@^0.3.4":
+  "integrity" "sha512-vlAoBifNJUkagB+PAdW4aHMe4pKmSLroH398UPgIogBFc91D2VlHUxe4pjxQhiJl0Nfw53sHSJSQBSTQBZP3vA=="
+  "resolved" "https://registry.npmjs.org/@tailwindcss/forms/-/forms-0.3.4.tgz"
+  "version" "0.3.4"
+  dependencies:
+    "mini-svg-data-uri" "^1.2.3"
+
+"@tailwindcss/typography@^0.4.1":
+  "integrity" "sha512-ovPPLUhs7zAIJfr0y1dbGlyCuPhpuv/jpBoFgqAc658DWGGrOBWBMpAWLw2KlzbNeVk4YBJMzue1ekvIbdw6XA=="
+  "resolved" "https://registry.npmjs.org/@tailwindcss/typography/-/typography-0.4.1.tgz"
+  "version" "0.4.1"
+  dependencies:
+    "lodash.castarray" "^4.4.0"
+    "lodash.isplainobject" "^4.0.6"
+    "lodash.merge" "^4.6.2"
+    "lodash.uniq" "^4.5.0"
+
 "@types/node-fetch@^2.5.10":
   "integrity" "sha512-MKgC4dlq4kKNa/mYrwpKfzQMB5X3ee5U6fSprkKpToBqBmX4nFZL9cW5jl6sWn+xpRJ7ypWh2yyqqr8UUCstSw=="
   "resolved" "https://registry.npmjs.org/@types/node-fetch/-/node-fetch-2.5.12.tgz"
@@ -2494,6 +2511,21 @@
   dependencies:
     "p-locate" "^4.1.0"
 
+"lodash.castarray@^4.4.0":
+  "integrity" "sha1-wCUTUV4wna3dTCTGDP3c9ZdtkRU="
+  "resolved" "https://registry.npmjs.org/lodash.castarray/-/lodash.castarray-4.4.0.tgz"
+  "version" "4.4.0"
+
+"lodash.isplainobject@^4.0.6":
+  "integrity" "sha1-fFJqUtibRcRcxpC4gWO+BJf1UMs="
+  "resolved" "https://registry.npmjs.org/lodash.isplainobject/-/lodash.isplainobject-4.0.6.tgz"
+  "version" "4.0.6"
+
+"lodash.merge@^4.6.2":
+  "integrity" "sha512-0KpjqXRVvrYyCsX1swR/XTK0va6VQkQM6MNo7PqW77ByjAhoARA8EfrP1N4+KlKj8YS0ZUCtRT/YUuhyYDujIQ=="
+  "resolved" "https://registry.npmjs.org/lodash.merge/-/lodash.merge-4.6.2.tgz"
+  "version" "4.6.2"
+
 "lodash.sortby@^4.7.0":
   "integrity" "sha1-7dFMgk4sycHgsKG0K7UhBRakJDg="
   "resolved" "https://registry.npmjs.org/lodash.sortby/-/lodash.sortby-4.7.0.tgz"
@@ -2503,6 +2535,11 @@
   "integrity" "sha1-NhY1Hzu6YZlKCTGYlmC9AyVP0Ak="
   "resolved" "https://registry.npmjs.org/lodash.topath/-/lodash.topath-4.5.2.tgz"
   "version" "4.5.2"
+
+"lodash.uniq@^4.5.0":
+  "integrity" "sha1-0CJTc662Uq3BvILklFM5qEJ1R3M="
+  "resolved" "https://registry.npmjs.org/lodash.uniq/-/lodash.uniq-4.5.0.tgz"
+  "version" "4.5.0"
 
 "lodash@^4.17.21":
   "integrity" "sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg=="
@@ -2632,6 +2669,11 @@
   dependencies:
     "mime-db" "1.49.0"
 
+"mini-svg-data-uri@^1.2.3":
+  "integrity" "sha512-gSfqpMRC8IxghvMcxzzmMnWpXAChSA+vy4cia33RgerMS8Fex95akUyQZPbxJJmeBGiGmK7n/1OpUX8ksRjIdA=="
+  "resolved" "https://registry.npmjs.org/mini-svg-data-uri/-/mini-svg-data-uri-1.4.3.tgz"
+  "version" "1.4.3"
+
 "minimalistic-assert@^1.0.0", "minimalistic-assert@^1.0.1":
   "integrity" "sha512-UtJcAD4yEaGtjPezWuO9wC4nwUnVH/8/Im3yEHQP4b67cXlD/Qr9hdITCU1xDbSEXg2XKNaP8jsReV7vQd00/A=="
   "resolved" "https://registry.npmjs.org/minimalistic-assert/-/minimalistic-assert-1.0.1.tgz"
@@ -2739,7 +2781,12 @@
   "resolved" "https://registry.npmjs.org/neo-async/-/neo-async-2.6.2.tgz"
   "version" "2.6.2"
 
-"next@12.0.1":
+"next-themes@^0.0.15":
+  "integrity" "sha512-LTmtqYi03c4gMTJmWwVK9XkHL7h0/+XrtR970Ujvtu3s0kZNeJN24aJsi4rkZOI8i19+qq6f8j+8Duwy5jqcrQ=="
+  "resolved" "https://registry.npmjs.org/next-themes/-/next-themes-0.0.15.tgz"
+  "version" "0.0.15"
+
+"next@*", "next@12.0.1":
   "integrity" "sha512-4MNXAbD9+Tmtejg0TOKbaP52Cgu4mIn2ejKMLHWV0acxWGkkcE7QvdZwvg5pkg3fQBMrgucOxxtmw4D7yWaZvg=="
   "resolved" "https://registry.npmjs.org/next/-/next-12.0.1.tgz"
   "version" "12.0.1"
@@ -3193,6 +3240,11 @@
     "nanoid" "^3.1.23"
     "source-map" "^0.6.1"
 
+"prettier@^2.4.1":
+  "integrity" "sha512-9fbDAXSBcc6Bs1mZrDYb3XKzDLm4EXXL9sC1LqKP5rZkT6KRr/rf9amVUcODVXgguK/isJz0d0hP72WeaKWsvA=="
+  "resolved" "https://registry.npmjs.org/prettier/-/prettier-2.4.1.tgz"
+  "version" "2.4.1"
+
 "pretty-hrtime@^1.0.3":
   "integrity" "sha1-t+PqQkNaTJsnWdmeDyAesZWALuE="
   "resolved" "https://registry.npmjs.org/pretty-hrtime/-/pretty-hrtime-1.0.3.tgz"
@@ -3332,7 +3384,7 @@
     "iconv-lite" "0.4.24"
     "unpipe" "1.0.0"
 
-"react-dom@^17.0.2", "react-dom@^17.0.2 || ^18.0.0", "react-dom@0.0.0-experimental-3c4c1c470-20211021", "react-dom@17.x":
+"react-dom@*", "react-dom@^17.0.2", "react-dom@^17.0.2 || ^18.0.0", "react-dom@0.0.0-experimental-3c4c1c470-20211021", "react-dom@17.x":
   "integrity" "sha512-s4h96KtLDUQlsENhMn1ar8t2bEa+q/YAtj8pPPdIjPDGBDIVNsrD9aXNWqspUe6AzKCIG0C1HZZLqLV7qpOBGA=="
   "resolved" "https://registry.npmjs.org/react-dom/-/react-dom-17.0.2.tgz"
   "version" "17.0.2"
@@ -3361,7 +3413,7 @@
     "neo-async" "^2.6.1"
     "object-assign" "^4.1.1"
 
-"react@^16.8.0 || ^17.0.0", "react@^17.0.2", "react@^17.0.2 || ^18.0.0", "react@>= 16.8.0 || 17.x.x || 18.x.x", "react@0.0.0-experimental-3c4c1c470-20211021", "react@17.0.2", "react@17.x":
+"react@*", "react@^16.8.0 || ^17.0.0", "react@^17.0.2", "react@^17.0.2 || ^18.0.0", "react@>= 16.8.0 || 17.x.x || 18.x.x", "react@0.0.0-experimental-3c4c1c470-20211021", "react@17.0.2", "react@17.x":
   "integrity" "sha512-gnhPt75i/dq/z3/6q/0asP78D0u592D5L1pd7M8P+dck6Fu/jJeL6iVVK23fptSUZj8Vjf++7wXA8UNclGQcbA=="
   "resolved" "https://registry.npmjs.org/react/-/react-17.0.2.tgz"
   "version" "17.0.2"
@@ -3998,7 +4050,7 @@
   dependencies:
     "has-flag" "^4.0.0"
 
-"tailwindcss@^2.2.19":
+"tailwindcss@^2.2.19", "tailwindcss@>=2.0.0":
   "integrity" "sha512-6Ui7JSVtXadtTUo2NtkBBacobzWiQYVjYW0ZnKaP9S1ZCKQ0w7KVNz+YSDI/j7O7KCMHbOkz94ZMQhbT9pOqjw=="
   "resolved" "https://registry.npmjs.org/tailwindcss/-/tailwindcss-2.2.19.tgz"
   "version" "2.2.19"

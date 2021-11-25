@@ -1,7 +1,8 @@
-export default function index() {
+import DarkModeSwitch from "@/components/darkModeSwitch"
+export default function HomePage() {
   return (
     <div>
-      <h1>hello</h1>
+      <DarkModeSwitch/>
     </div>
   )
 }
