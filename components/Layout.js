@@ -1,6 +1,7 @@
 import Head from "next/head"
 import Header from "@/components/Header"
 import Footer from "@/components/Footer"
+import Navbar from "@/components/Navbar"
 import DarkModeSwitch from "./DarkModeSwitch"
 
 
@@ -13,7 +14,7 @@ export default function Layout({title, children, keywords, description}) {
         <meta name='description' content={description}/>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Header />
+      <Navbar />
 
 
       <main className="container mx-auto my-7">{children}</main>
