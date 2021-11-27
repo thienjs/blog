@@ -3,6 +3,9 @@ import Link from "next/link";
 import { useTheme } from "next-themes";
 import { useRouter } from "next/router";
 import userData from "@constants/data";
+import ThemeChanger from "@components/ThemeChanger";
+
+const themes = [{ name: 'Light' }, { name: 'Dark' }, { name: 'Emerald' }, { name: 'Pink' }];
 
 export default function Navbar() {
   const router = useRouter();
@@ -31,6 +34,9 @@ export default function Navbar() {
             </a>
           </Link>
         </div>
+        <span>
+        The current theme is: <strong>{theme}</strong>
+      </span>
 
         <div className="space-x-8 hidden md:block">
           <Link href="/about">
@@ -217,6 +223,25 @@ export default function Navbar() {
               </svg>
             )}
           </button>
+          <div>
+        <label htmlFor="theme-select" className="sr-only mr-2">
+          Choose theme:
+        </label>
+        <select
+          name="theme"
+          id="theme-select"
+          className="bg-white text-gray-800 border-gray-800 border py-1 px-3"
+          onChange={(e) => setTheme(e.currentTarget.value)}
+          value={theme}
+        >
+          <option value="">Select Theme</option>
+          {themes.map((t) => (
+            <option key={t.name.toLowerCase()} value={t.name.toLowerCase()}>
+              {t.name}
+            </option>
+          ))}
+        </select>
+      </div>
         </div>
       </div>
       <div className="space-x-8 block md:hidden mt-4">
