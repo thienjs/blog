@@ -1,10 +1,15 @@
-import Layout from "@/components/Layout"
-import Contact from "@/components/Contact"
-export default function HomePage() {
+import Head from "next/head";
+import ContainerBlock from "../components/ContainerBlock";
+import userData from "@constants/data";
+
+export default function Home({ repositories }) {
   return (
-    <Layout>
-      <h1>hello world</h1>
-      <Contact/>
-    </Layout>
-  )
+    <ContainerBlock
+      title="Thien Tran"
+      description="blog to get a job"
+    >
+
+
+    </ContainerBlock>
+  );
 }

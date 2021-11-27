@@ -2,12 +2,15 @@
     "compilerOptions": {
       "baseUrl": ".",
       "paths": {
-        "@/components/*": ["components/*"],
-        "@/config/*": ["config/*"],
-        "@/utils/*": ["utils/*"],
-        "@/lib/*": ["lib/*"],
-        "@/styles/*": ["styles/*"],
-        "@/hooks/*": ["hooks/*"]
+        "@components/*": ["components/*"],
+        "@config/*": ["config/*"],
+        "@utils/*": ["utils/*"],
+        "@lib/*": ["lib/*"],
+        "@styles/*": ["styles/*"],
+        "@hooks/*": ["hooks/*"],
+        "@layouts/*": ["layouts/*"],
+        "@constants/*": ["constants/*"],
+        "@data/*": ["data/*"],
       }
     }
   }
