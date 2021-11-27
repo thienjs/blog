@@ -1,6 +1,6 @@
 ### blog
 
-## Stack
+# Stack
 - nextjs
 - tailwindcss
 - notion api
@@ -8,7 +8,19 @@
 - [ ] heroku
 
 
-## Pages
+# Pages
 - index
 - blog
 - projects
+- about
+- contact
+
+# features
+- [ ] multi-theme
+- [x] dark-mode
+- [ ] strapi backend
+- [ ] authentication
+- [ ] guestbook
+
+
+

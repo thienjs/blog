@@ -1,8 +1,8 @@
 import Head from "next/head";
 import Link from "next/link";
-import { getDatabase } from "../lib/notion";
+import { getDatabase } from "@lib/notion";
 import { Text } from "./[id].js";
-import styles from "../styles/blog.module.css";
+import styles from "@styles/blog.module.css";
 
 export const databaseId = process.env.NOTION_DATABASE_ID;
 
