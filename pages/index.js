@@ -1,31 +1,29 @@
-import Head from "next/head";
-import ContainerBlock from "../components/ContainerBlock";
-import userData from "@constants/data";
-import LatestCode from "@components/LatestCode";
-import getLatestRepos from "@lib/getLatestRepos";
+import Head from "next/head"
+import ContainerBlock from "../components/ContainerBlock"
+import userData from "@constants/data"
+import LatestCode from "@components/LatestCode"
+import getLatestRepos from "@lib/getLatestRepos"
+import Timeline from "@components/Timeline"
+import axios from "axios"
 
-export default function Home({ repositories }) {
+export default function Home({ posts }) {
   return (
     <ContainerBlock
       title="Thien Tran"
       description="blog to get a job"
     >
-     <LatestCode repositories={repositories} />
-
+      <Timeline/>
+      <h1>{posts[0].title}</h1>
     </ContainerBlock>
   );
 }
 
-export const getServerSideProps = async () => {
-  console.log(process.env.GITHUB_AUTH_TOKEN);
-  let token = process.env.GITHUB_AUTH_TOKEN;
-
-  const repositories = await getLatestRepos(userData, token);
-  // console.log("REPOSITORIES", repositories);
+export async function getStaticProps() {
+  const postsRes = await axios.get("http://localhost:1337/posts")
 
   return {
     props: {
-      repositories,
-    },
-  };
-};
+      posts: postsRes.data
+    }
+  }
+}
